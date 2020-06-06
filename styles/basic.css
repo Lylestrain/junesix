@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: aquamarine;
+}
+
+header {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1em 0em;
+    border-bottom: rgb(255, 217, 0) 12px solid;
+}
