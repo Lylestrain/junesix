@@ -1,0 +1,19 @@
+
+.box {
+    background-color: darkgreen;
+    color: gainsboro;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+article {
+    border: darkorange 4px solid;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.container {
+    text-align: center;
+    justify-content: center;
+    /*display: flex;*/
+}
