@@ -58,8 +58,13 @@ const lowerCount = document.querySelector('#minusBtn_7');
 
 let count = 0;
 
+// box 8
 
+const nextBtn = document.querySelector('#nextBtn_8');
+const prevBtn = document.querySelector('#prevBtn_8');
+const container = document.querySelector('.imageContainer');
 
+let counte = 0;
 
 
 
@@ -85,6 +90,12 @@ sendButton.addEventListener('click', sendMessage);
 
 addCount.addEventListener('click', increaseCount);
 lowerCount.addEventListener('click', decreaseCount);
+
+// box 8 buttons
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
 
 
 function changeBG_1(){
@@ -149,3 +160,23 @@ function getHex(){
       count -- ;
       counter.innerHTML = count ;
   }
+
+  // box 8
+
+
+
+function nextSlide(){
+    if(counte === 5){
+        counte = -1
+    }
+    counte ++ ;
+    container.style.backgroundImage = `url(/images/bcg-${counte}.jpg)`
+}
+
+function prevSlide(){
+    if(counte === 0){
+        counte = 6
+    }
+    counte -- ;
+    container.style.backgroundImage = `url(/images/bcg-${counte}.jpg)`
+}
