@@ -5,6 +5,7 @@
     width: 400px;
     height: 200px;
     margin-bottom: 15px;
+    position: relative;
 }
 article {
     border: darkorange 4px solid;
@@ -16,4 +17,44 @@ article {
     text-align: center;
     justify-content: center;
     /*display: flex;*/
+}
+.imageContainer {
+    background-color: greenyellow;
+    background: url('/images/bcg-0.jpg') center/cover no-repeat;
+
+    flex: 0 0 85%;
+    border-radius: 15px;
+    box-shadow: 5px 10px blue;
+
+}
+.imageContainer .btn {
+    display: inline-block;
+    background-color: cornsilk;
+    color: darkgreen;
+    border: darkorange 3px solid;
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 20%;
+    box-shadow: darkred 2px 5px;
+    outline: none;
+}
+
+#prevBtn_8 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+#nextBtn_8 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+#box_8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
