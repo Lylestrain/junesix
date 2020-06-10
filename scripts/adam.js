@@ -52,7 +52,11 @@ const messageOut = document.querySelector('#messageOut');
 
 // box 7
 
+let counter = document.querySelector('#counter');
+const addCount = document.querySelector('#addBtn_7');
+const lowerCount = document.querySelector('#minusBtn_7');
 
+let count = 0;
 
 
 
@@ -79,7 +83,8 @@ sendButton.addEventListener('click', sendMessage);
 
 // box 7 buttons
 
-
+addCount.addEventListener('click', increaseCount);
+lowerCount.addEventListener('click', decreaseCount);
 
 
 function changeBG_1(){
@@ -135,3 +140,12 @@ function getHex(){
   }
 
   // box 7
+
+  function increaseCount(){
+      count ++ ;
+      counter.innerHTML = count ;
+  }
+  function decreaseCount(){
+      count -- ;
+      counter.innerHTML = count ;
+  }
