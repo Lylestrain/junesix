@@ -21,7 +21,7 @@ article {
 .imageContainer {
     background-color: greenyellow;
     background: url('/images/bcg-0.jpg') center/cover no-repeat;
-
+    min-height: 75%;
     flex: 0 0 85%;
     border-radius: 15px;
     box-shadow: 5px 10px blue;
