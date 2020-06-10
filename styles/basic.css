@@ -13,3 +13,11 @@ header {
     padding: 1em 0em;
     border-bottom: rgb(255, 217, 0) 12px solid;
 }
+
+section {
+    width: 85%;
+    height: 100vh;
+    margin: 0px auto;
+    padding-top: 120px;
+    background-color: darkgray;
+}
